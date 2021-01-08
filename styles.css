@@ -1,6 +1,10 @@
 #container_div {
-    margin: auto;
-    background-color: rgb(255, 131, 131);
-    height: 832px;
-    width: 832px;
+    background-color: rgb(0, 0, 0);
+    margin: 30px auto;
+    width: min-content;
+    padding: 1px;
+    display: grid;
+    grid-template-columns: repeat(16, 30px);
+    grid-template-rows: repeat(16, 30px);
+    grid-gap: 1px;
 }
