@@ -1,5 +1,16 @@
 // Get container div
 let container_div = document.getElementById('container_div');
+
+let left_div = document.createElement('div');
+left_div.style.float = 'left';
+left_div.style.backgroundColor = 'blue';
+document.body.appendChild(left_div);
+
+let right_div = document.createElement('div');
+right_div.style.float = 'right';
+right_div.style.backgroundColor = 'blue';
+document.body.appendChild(right_div);
+
 let drawingEnabled = false;
 
 // Add a listener to the container to toggle the drawing ability
