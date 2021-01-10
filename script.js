@@ -1,6 +1,7 @@
 // Get container div
 let container_div = document.getElementById('container_div');
 
+// Create and style logo div on left
 let left_div = document.createElement('div');
 left_div.style.float = 'left';
 left_div.style.backgroundColor = 'blue';
@@ -8,6 +9,7 @@ left_div.style.height = '50px';
 left_div.style.width = '50px';
 document.body.appendChild(left_div);
 
+// Create and style options div on right
 let right_div = document.createElement('div');
 right_div.style.float = 'right';
 right_div.style.backgroundColor = 'blue';
@@ -15,27 +17,29 @@ right_div.style.height = '50px';
 right_div.style.width = '50px';
 document.body.appendChild(right_div);
 
-let drawingEnabled = false;
+// Diasble ability to sketch by default
+let sketchingEnabled = false;
 
-// Add a listener to the container to toggle the drawing ability
+// Add a listener to the container to toggle the sketching ability
 container_div.addEventListener('click', function (e) {
-    drawingEnabled = !drawingEnabled;
+    sketchingEnabled = !sketchingEnabled;
 });
 
-// Create a 16x16 layout of squares
-// Add the squares to the container div
-// Add a listener to each square
+// Use a loop to create a 16 by 16 grid of 'pixels' 
 for(var i = 0; i < 256; i++) {
-    let grid_square = document.createElement('div');
+    // Create and style one pixel
+    let pixel = document.createElement('div');
     let id = 'square_' + i;
     
-    grid_square.style.backgroundColor = 'white';
-    grid_square.id = id;
-    grid_square.classList.add('square');
+    pixel.style.backgroundColor = 'white';
+    pixel.id = id;
+    pixel.classList.add('square');
     
-    container_div.appendChild(grid_square);
+    // Add each pixel to the container div
+    container_div.appendChild(pixel);
 
-    grid_square.addEventListener('mouseover', function(e) {
+    // Add a listener to each pixel
+    pixel.addEventListener('mouseover', function(e) {
         if(drawingEnabled) {
             e.target.style.backgroundColor = 'black';
         }
