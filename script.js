@@ -4,11 +4,15 @@ let container_div = document.getElementById('container_div');
 let left_div = document.createElement('div');
 left_div.style.float = 'left';
 left_div.style.backgroundColor = 'blue';
+left_div.style.height = '50px';
+left_div.style.width = '50px';
 document.body.appendChild(left_div);
 
 let right_div = document.createElement('div');
 right_div.style.float = 'right';
 right_div.style.backgroundColor = 'blue';
+right_div.style.height = '50px';
+right_div.style.width = '50px';
 document.body.appendChild(right_div);
 
 let drawingEnabled = false;
