@@ -1,10 +1,14 @@
 #container_div {
-    background-color: rgb(0, 0, 0);
     margin: 30px auto;
-    width: min-content;
+    width: 100%;
+    display: flex;
+}
+
+.grid_div {
     padding: 1px;
     display: grid;
     grid-template-columns: repeat(16, 30px);
     grid-template-rows: repeat(16, 30px);
     grid-gap: 1px;
+    flex-grow: 1;
 }
