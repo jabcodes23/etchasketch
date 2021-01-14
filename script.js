@@ -120,6 +120,7 @@ rainbow_button.addEventListener('click', function (e) {
     rainbowEnabled = !rainbowEnabled;
     rainbowEnabled ? rainbow_button.style.textDecoration = 'underline' : rainbow_button.style.textDecoration = 'none';
     shadingEnabled = false;
+    shade_button.style.textDecoration = 'none';
 });
 colors_div.appendChild(rainbow_button);
 
@@ -132,6 +133,7 @@ shade_button.addEventListener('click', function (e) {
     shadingEnabled = !shadingEnabled;
     shadingEnabled ? shade_button.style.textDecoration = 'underline' : shade_button.style.textDecoration = 'none';
     rainbowEnabled = false;
+    rainbow_button.style.textDecoration = 'none';
 });
 colors_div.appendChild(shade_button);
 
