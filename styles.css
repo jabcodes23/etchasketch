@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body {
+    background-color: pink;
+    font-family: 'Bungee', cursive;
+}
+
 #container_div {
     margin: 30px auto;
     width: 100%;
     display: flex;
 }
 
-.grid_div {
-    padding: 1px;
-    display: grid;
-    grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
-    grid-gap: 1px;
-    flex-grow: 1;
-}
+.button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(65, 192, 201);
+    font-family: 'Bungee', cursive;
+    border: 0px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px auto;
+  }
