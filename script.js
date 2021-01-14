@@ -149,6 +149,8 @@ reset_button.addEventListener('click', function (e) {
     clear();
     shadingEnabled = false;
     rainbowEnabled = false;
+    rainbow_button.style.textDecoration = 'none';
+    shade_button.style.textDecoration = 'none';
     slider.value = 1;
     makeGrid(16);
 });
